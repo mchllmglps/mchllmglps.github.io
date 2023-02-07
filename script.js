@@ -27,3 +27,14 @@ function scrollHeader(){
     if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const subject = document.getElementById('subject');
+const message = document.getElementById('message');
+const submit = document.getElementsByClassName('form-contact')[0];
+
+submit.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    console.log('clicked');
+})

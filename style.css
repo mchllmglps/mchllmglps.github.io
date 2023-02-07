@@ -42,6 +42,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand';
+    text-decoration: none;
 }
 
 html{
@@ -52,6 +54,7 @@ body{
     margin: var(--header-height) 0 0 0;
     font-family: 'Quicksand';
     font-size: var(--normal-font-size);
+    text-decoration: none;
     /* background-color: var(--bgcolor-home); */
 }
 
@@ -244,6 +247,69 @@ img{
     color: var(--firstcolor);
 }
 
+#contactme .reachme{
+    text-align: center;
+}
+
+#contactme .reachme p{
+    font-size: 15px;
+}
+
+#contactme .reachme .form {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#contactme .reachme .form .inputfield{
+    padding: 10px;
+}
+
+#contactme .reachme .form .inputfield input{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid #66573b;
+}
+
+#contactme .reachme .form .inputfield input:focus{
+    background-color: whitesmoke;
+    border-radius: 0%;
+    outline-color: #66573b;
+}
+
+#contactme .reachme .form .inputfield textarea{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid #66573b;
+    max-width: 100%;
+    /* min-height: 200px; */
+}
+
+#contactme .reachme .form .inputfield textarea:focus{
+    background-color: whitesmoke;
+    border-radius: 0%;
+    outline-color: #66573b;
+}
+
+#contactme .reachme .form .inputfield .submitbutton{
+    border: 2px solid #66573b;
+    padding: 10px 40px 10px;
+    float: right;
+    background-color: #66573b;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#contactme .reachme .form .inputfield .submitbutton:hover{
+    background-color: #e8dcb5;
+    color: #66573b;
+}
 
 
 
