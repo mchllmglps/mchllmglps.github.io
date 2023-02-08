@@ -261,11 +261,12 @@ img{
 }
 
 .content {
-position: relative;
-/* width: 90%;
-max-width: 400px; */
-margin: auto;
-overflow: hidden;
+    position: relative;
+    /* width: 90%;
+    max-width: 400px; */
+    margin: auto;
+    overflow: hidden;
+    object-fit: contain;;
 }
   
 .content .content-overlay {
@@ -284,28 +285,28 @@ overflow: hidden;
 }
   
 .content:hover .content-overlay{
-opacity: 1;
+    opacity: 1;
 }
 
 .content-image{
-width: 100%;
+    width: 100%;
 }
 
 .content-details {
-position: absolute;
-text-align: center;
-padding-left: 1em;
-padding-right: 1em;
-width: 100%;
-top: 50%;
-left: 50%;
-opacity: 0;
--webkit-transform: translate(-50%, -50%);
--moz-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
--webkit-transition: all 0.3s ease-in-out 0s;
--moz-transition: all 0.3s ease-in-out 0s;
-transition: all 0.3s ease-in-out 0s;
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
   
 .content:hover .content-details{
@@ -333,12 +334,12 @@ transition: all 0.3s ease-in-out 0s;
 
 /* ABOUT */
 
-.about{
+.about, .qualification_container{
     width: 100%;
     display: flex;
 }
 
-.about .left{
+.about .left, .qualification_container .leftqual{
     width: 50%;
 }
 .about .right{
@@ -346,6 +347,9 @@ transition: all 0.3s ease-in-out 0s;
     padding-left: 40px;
     text-align: center;
     margin: auto;
+}
+.qualification_container .rightqual{
+    width: 50%;
 }
 
 .about .right .button{
@@ -366,6 +370,22 @@ transition: all 0.3s ease-in-out 0s;
 .about .right .button:hover{
     background-color: #b99965;
 }
+
+/* Qualifications */
+
+.qualifaction_container{
+    display: flex;
+    width: 100%;
+}
+
+.qualifaction_container .education{
+    width: 50%;
+}
+
+.qualifaction_container .experience{
+    width: 50%;
+}
+
 
 #contactme .reachme{
     text-align: center;
