@@ -28,7 +28,7 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-const name = document.getElementById('name');
+const sender = document.getElementById('name');
 const email = document.getElementById('email');
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
@@ -37,4 +37,24 @@ const submit = document.getElementsByClassName('form-contact')[0];
 submit.addEventListener('submit', (e)=>{
     e.preventDefault();
     console.log('clicked');
+    console.log(email.value)
+
+    let body = 
+        `<b>Name: </b> ${sender.value}
+        <br>
+        <b>Email: </b>${email.value}
+        <br>
+        <b>Message: </b>${message.value}
+        <br>`
+
+    Email.send({
+        SecureToken : "6c014f45-5450-41dd-b506-2fa17264a900",
+        To : 'mchllmglps@gmail.com',
+        From : "mchllmglps@gmail.com",
+        Subject : "From: " + email.value,
+        Body : body
+    }).then(
+      message => alert(message)
+    );
 })
+
