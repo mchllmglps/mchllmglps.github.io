@@ -348,8 +348,7 @@ transition: all 0.3s ease-in-out 0s;
     margin: auto;
 }
 
-.about .right button{
-    margin-top: 20px;
+.about .right .button{
     width: 100%;
     padding: 10px;
     /* border: none; */
@@ -360,7 +359,11 @@ transition: all 0.3s ease-in-out 0s;
     transition: .4s ease-in-out;
 }
 
-.about .right button:hover{
+.about .right .button a{
+    color: white;
+}
+
+.about .right .button:hover{
     background-color: #b99965;
 }
 
