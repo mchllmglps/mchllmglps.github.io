@@ -248,13 +248,13 @@ img{
 }
 
 
-#gallery .gallery{
+#interests .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
 }
 
-#gallery .gallery img{
+#interests .gallery img{
     width: 500px;
     min-width: 100%;
     height: 400px;
