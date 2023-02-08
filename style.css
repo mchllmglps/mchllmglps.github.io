@@ -542,8 +542,155 @@ img{
  }
  
 
+/* SKILLS */
+
+.skills-bar{
+	width: 100%;
+	background-color: transparent;
+	border-radius: 10px;
+	padding: 25px 30px;
+}
+
+.skills-bar .bar{
+	margin: 20px 0px;
+}
+
+.skills-bar .bar:first-child{
+	margin-top: 0px;
+}
+
+.skills-bar .bar .info{
+	margin-bottom: 5px;
+}
+@keyframes showText{
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes animate{
+	100%{
+		transform: scaleX(1);
+	}
+
+}
+
+.skills-bar .bar .info span{
+	font-size: 17px;
+	font-weight: 500;
+	opacity: 0;
+	animation: showText 0.5s 1.5s linear forwards;
+}
+
+.skills-bar .bar .progress-line{
+	position: relative;
+	height: 10px;
+	width:100%;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),0px 1px rgba(255,255,255,0.8);
+	animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+
+.bar .progress-line span{
+	height: 100%;
+	width: 80%;
+	background: #b99965;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 1s 1s  cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.progress-line.html span{
+	width: 70%;
+}
 
 
+.progress-line.javascript span{
+	width: 50%;
+}
+
+.progress-line.php span{
+	width: 60%;
+}
+
+.progress-line.java span{
+	width: 50%;
+}
+
+.progress-line.python span{
+	width: 55%;
+}
+
+.progress-line.mysql span{
+	width: 40%;
+}
+
+.bar .progress-line span::before{
+	position: absolute;
+	content: "";
+	right: 0;
+	top: -10px;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color:#66573b;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+@keyframes showText2{
+	100%{
+		opacity: 1;
+	}
+}
+
+.bar .progress-line span::after{
+	position: absolute;
+	right: 0;
+	top: -28px;
+	background: #66573b;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 1px 8px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line.html span::after{
+	content: "70%";
+}
+
+
+.progress-line.javascript span::after{
+	content: "50%";
+}
+
+.progress-line.php span::after{
+	content: "60%";
+}
+
+.progress-line.java span::after{
+	content: "50%";
+}
+
+.progress-line.python span::after{
+	content: "55%";
+}
+
+.progress-line.mysql span::after{
+	content: "40%";
+}
 
 
 
