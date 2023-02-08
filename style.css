@@ -92,8 +92,8 @@ img{
 
 .container{
     max-width: 968px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 
@@ -308,40 +308,58 @@ transform: translate(-50%, -50%);
 transition: all 0.3s ease-in-out 0s;
 }
   
-  .content:hover .content-details{
+.content:hover .content-details{
     top: 50%;
     left: 50%;
     opacity: 1;
-  }
-  
-  .content-details h3{
+}
+
+.content-details h3{
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.15em;
     margin-bottom: 0.5em;
     text-transform: uppercase;
-  }
-  
-  .content-details p{
+}
+
+.content-details p{
     color: #fff;
     font-size: 0.8em;
-  }
-  
-  .fadeIn-bottom{
-    top: 80%;
-  }
-  
-  .fadeIn-top{
-    top: 20%;
-  }
+}
   
   .fadeIn-left{
     left: 20%;
   }
-  
-  .fadeIn-right{
-    left: 80%;
-  }
+
+/* ABOUT */
+
+#about{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+#about .about{
+    background-color: #8a744b;
+    padding: 20px;
+}
+
+#about .about .me{
+    text-align: center;
+}
+
+#about .about h2{
+    color: white;
+}
+
+
+#about .about .me img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
 
 #contactme .reachme{
     text-align: center;
